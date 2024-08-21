@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <meta charset=UTF-8 />
+    <meta name=viewport content="width=device-width, initial-scale=1.0" />
+    <title>Glamora</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel=stylesheet href=style.css />
+    <link rel=stylesheet href=style2.css />
+  </head>
+  <body>
+    <header class=main-header>
+      <div class=main-info>
+        <div class=container></div>
+          <div class=row>
+            <h1 class=logo>
+              <a href=#>
+                <img src=images/logo.svg class=logo-light />
+              </a>
+            </h1>
+       
+            </div>
+          </div>
+        </div>
+      
+    </header>
+  
+    <section class="fill-banner banner-blog2-bg">
+      <div class=container>
+        <div class=row>
+          <div class="col-12 col-md-10 col-xl-5">
+            <h2> <br class="d-none d-xl-inline-block" />Skin Care Secrets  </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class=blog>
+      <div class=container>
+        <div class=row>
+          <h2 class=col-12>Skin Care Secrets</h2>
+          <article class="col-12">
+            <div class=post>
+              <h3 class=time> jan 19, 2023 at 5:12pm </h3>
+              <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, eveniet cupiditate magni sapiente sunt rem placeat laboriosam numquam deserunt ipsa? </p>
+            </div>
+          </article>   
+        </div>
+      </div>
+    </section>
+
+
+
+    
+    <footer class=main-footer>
+      <div class=container>
+        <div class=row>
+          <div class=col-4>
+            <div class=footer-logo>
+              <a href=#>
+                <img src=images/logo.svg class=logo-light />
+              </a>
+            </div>
+            <ul class=sns>
+              <li class=icon-fb>
+                <a href=#>
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class=icon-twitter>
+                <a href=#>
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class=icon-instagram>
+                <a href=#>
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li class=icon-pinterest>
+                <a href=#>
+                  <i class="fab fa-pinterest"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class=col-4>
+            <h3>CONTACT US</h3>
+            <div class=contact>
+              <div class=contact-icon>
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class=contact-main>
+                <a href=#>7800000000</a>
+                <br />
+                <a href=#>0100000000</a>
+              </div>
+            </div>
+            <div class=contact>
+              <div class=contact-icon>
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class=contact-main>
+                <a href=#>221,Loreal Place,United Kingdom</a>
+              </div>
+            </div>
+            <div class=contact>
+              <div class=contact-icon>
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class=contact-main>
+                <a href=#>designbyali@mail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class=col-4>
+            <h3>Any Query</h3>
+            <p> Enter your email address to receive up-to-date blog, new patient services and other useful stuff, delivered right to your inbox. </p>
+            <div class=form-group>
+              <input class=form-control type=text placeholder="Your e-mail..." />
+              <button class=submit-btn type=submit>Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div class=row>
+          <div class=copyright> © 2024 Build by <a href=https://maleeshat.github.io/Portfolio>Maleesha Thalagala</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div id=goTop class=goTop></div>
+    <script src=jqury.min.js></script>
+    <script>
+      $(function() {
+        $(window).scroll(function() {
+          if ($(document).scrollTop() > 60) {
+            $(".main-nav").addClass("sticky")
+          } else {
+            $(".main-nav").removeClass("sticky")
+          }
+        });
+        $("#goTop").click(function() {
+          $("html,body").animate({
+            scrollTop: 0
+          }, "slow");
+          return false
+        });
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 300) {
+            $("#goTop").addClass("active")
+          } else {
+            $("#goTop").removeClass("active");
+            return false
+          }
+        }).scroll()
+      });
+    </script>
+  </body>
+</html>
