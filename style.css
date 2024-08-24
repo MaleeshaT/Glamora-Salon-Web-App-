@@ -733,3 +733,10 @@ a {
   background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 
+.banner-Nailcare-bg {
+  background-image: url('images/Nailcare.jpg');
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
