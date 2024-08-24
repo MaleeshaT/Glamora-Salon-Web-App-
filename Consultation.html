@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset=UTF-8 />
+    <meta name=viewport content="width=device-width, initial-scale=1.0" />
+    <title>Salon Appointment</title>
+    <link rel="stylesheet" href="stylesappoinment.css"> <!-- Link to the external stylesheet -->
+    <link rel=stylesheet href=style.css />
+    <link rel=stylesheet href=style2.css />
+</head>
+<body>
+
+    <form class="appointment-form" action="#" method="post">
+        <h2>Make an Appointment for Free Consultation</h2>
+        
+        <label for="service">Select a Service</label>
+        <select id="service" name="service" required>
+            <option value="" disabled selected>Select a service</option>
+            <option value="haircut">Eyebrow-shaping-and-tinting</option>
+            <option value="hair-coloring">Facial treatments</option>
+            <option value="manicure">Haircut and styling</option>
+            <option value="pedicure">Hair removal</option>
+            <option value="facial">Skin rejuvenation</option>
+            <option value="massage">Spa treatments</option>
+        </select>
+
+        <label for="date">Select a Date</label>
+        <input type="date" id="date" name="appointment-date" required>
+
+        <label for="time">Select a Time</label>
+        <input type="time" id="time" name="appointment-time" required>
+
+        <input type="submit" value="Book consultation">
+    </form>
+</body>
+</html>
+
+
+
